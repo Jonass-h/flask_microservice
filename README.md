@@ -22,10 +22,11 @@ You can use Development, Production or Testing or add your own environment in `a
 
 ### get all project
 
-``bash
+```bash
 curl --location --request GET 'http://127.0.0.1:5100/v1/projects'
 ```
-### get a single project with id
+
+### get a single project
 
 ```bash
 curl --location --request GET 'http://127.0.0.1:5100/v1/projects/get/616b09a792f3124f2c87d9a5'
@@ -41,7 +42,6 @@ curl --location --request POST 'http://127.0.0.1:5100/v1/projects/add' \
     "description": "yet another project !"
 }'
 ```
-
 
 ## Structure
 
