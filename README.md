@@ -44,26 +44,8 @@ curl --location --request POST 'http://127.0.0.1:5100/v1/projects/add' \
 ```
 
 ## Structure
-
-Here is a folder and file structure with explanation.
-
 ```
-├── Dockerfile
-├── LICENSE
-├── README.md
-├── api
-│   ├── app.py - Entry point of application
-│   ├── config.py - Configuration with environments
-│   └── v1 - API version 1
-│       ├── database
-│       │   └── models.py - All data models app uses
-│       └── resources
-│           ├── routes.py - List of namespaces for routing
-│           └── todos.py - Example Todo resource
-├── docker-compose.yml
-├── requirements.txt - Dependencies
-└── tests
-    └── text_base.py - Example test file
+TODO
 ```
 
 ## Documentation
