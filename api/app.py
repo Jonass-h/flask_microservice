@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def my_index():
-    return render_template("index.html", flask_token="Hello   world")
+    return render_template("index.html", flask_token="Hello world")
 
 
 config = globals()[os.environ['ENV']]
