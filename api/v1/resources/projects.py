@@ -8,12 +8,14 @@ from v1.database.models import Project
 
 projects = Namespace('v1/projects', description='Projects namespace')
 
-@projects.route('/')
+
+""" @projects.route('/')
 class ProjectsApi(Resource):
     def get(self):
         '''List all Projects'''
         projects = Project.objects.all()
-        return json.loads(projects.to_json()), 200
+        return json.loads(projects.to_json()), 200 
+"""
 @projects.route('/add')
 class AddProjectApi(Resource):
     def post(self):
