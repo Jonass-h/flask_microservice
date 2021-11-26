@@ -11,23 +11,41 @@ const api=axios.create({
 
 export default class App extends Component {
   state={
-    projects=[
-    ]
+    projects=[]
   }
 
   constructor(){
     super();
     api.get("/").then(
       res => {
-        console.log(res)
-        this.setState({})
+        console.log(res.data)
+        this.setState({
+          projects:res.data
+        })
       }
     )
   }
+
+  createCourse = async ()=>{
+    let res = await api.post(
+      "/",
+      {
+        id:4,
+        title:"test"
+
+      }
+    )
+    console.log(res)
+  }
+
   render() {
     return (
       <div>
-        
+         {this.state.projects.map(
+           project => {
+             <h2 key={project.id}>{project.title}</h2>
+           }
+         )}
       </div>
     )
   }
